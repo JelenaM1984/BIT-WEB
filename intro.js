@@ -26,10 +26,3 @@
 //     result='a is equal to b'
 // }
 // console.log(result);
-
-    
-} else {
-    
-}
-
-
