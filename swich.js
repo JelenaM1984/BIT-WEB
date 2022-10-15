@@ -94,24 +94,38 @@
 //         break;
 // }
 // console.log(result);
-var a = 'A';
+// var a = 'A';
+// switch (a) {
+//     case 'A':
+//         result = 'Good job';
+//         break;
+//     case 'B':
+//         result='Pretty good';
+//         break;
+//     case 'C':
+//         result='Past';
+//         break;
+//     case 'D':
+//         result='Not so good';
+//         break;
+//     case 'F':
+//         result='Failed';
+//         break;
+//      default: 'Unknown grade';
+//         break;
+// }
+// console.log(result);
+var a = "Novi Sad";
 switch (a) {
-    case 'A':
-        result = 'Good job';
+    case 'Novi Sad':
+        result = 'Srbija';
         break;
-    case 'B':
-        result='Pretty good';
+    case 'Ankara':
+        result = 'Turska';
         break;
-    case 'C':
-        result='Past';
-        break;
-    case 'D':
-        result='Not so good';
-        break;
-    case 'F':
-        result='Failed';
-        break;
-     default: 'Unknown grade';
+
+
+
+    default:
         break;
 }
-console.log(result);
