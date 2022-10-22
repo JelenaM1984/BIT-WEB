@@ -1,0 +1,37 @@
+.prvi {
+    color: rgb(0, 206, 209);
+    background-color: black;
+    opacity: 0.5;
+}
+.drugi {
+color:hwb(308 17% 11%);
+background-color: rgb(192, 164, 38);
+background: rgba(rgb(250, 245, 245), rgb(184, 207, 184), rgb(103, 103, 124), 0.2);
+}
+.treci {
+    color:#41a334;
+    background-color: hsl(293, 52%, 42%);
+}
+.bart{
+
+    background:rgba(0, 206, 209, 0.5);
+}
+.tabela {
+    width: 100%;
+    
+}
+#jedan{
+background-color: aliceblue;
+}
+#dva {
+    background-color: hotpink;
+}
+#tri {
+    background-color: #41a334;
+}
+#cetiri {
+    background-color: aqua;
+}
+#pet {
+    background-color:yellowgreen;
+}

@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: Googlefont;
+    src: url("https://fonts.google.com/specimen/Trispace/tester");
+  }
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+}
+.prvi{
+    font-style: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.drugi{
+    font-style: oblique;
+    font-family: Googlefont;
+}
+.treci {
+font-family:trispace;
+}
+#span{
+    font-weight: 50px;
+    font-style: italic;
+}
