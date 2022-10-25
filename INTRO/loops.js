@@ -62,6 +62,45 @@ for (let index = 0; index < a.length; index++) {
 //zadatak 6
 var sum = 0;
 for (let i = 0; i <= 20; i++) {
-  sum += i;
+  sum += i * i;
 }
-console.log("zbir kvadrata brojeva od 1 do 20 iznosi; " + sum);
+console.log("zbir kvadrata brojeva od 1 do 20 iznosi: " + sum);
+//zadatak 7
+var students = [
+  ["David", 8],
+  ["Marko", 77],
+  ["Dany", 88],
+  ["john", 95],
+  ["tomas", 68],
+];
+var prosek = 0;
+for (var i = 0; i < students.length; i++) {
+  prosek += students[i][1];
+  var avgmarks = prosek / students.length;
+}
+console.log("Prosecna ocena studenata je: " + avgmarks);
+if (avgmarks < 60) {
+  console.log("Ocena : F");
+} else if (avgmarks < 70) {
+  console.log("Ocena : D");
+} else if (avgmarks < 80) {
+  console.log("Ocena : C");
+} else if (avgmarks < 90) {
+  console.log("Ocena : B");
+} else if (avgmarks < 100) {
+  console.log("Ocena : A");
+}
+//zadatak 8
+
+var i = 1;
+for (var i = 1; i <= 100; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log("FuzzBuzz");
+  } else if (i % 3 == 0) {
+    console.log("Fuzz");
+  } else if (i % 5 == 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
