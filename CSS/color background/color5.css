@@ -1,0 +1,40 @@
+.first {
+    background-color: yellow;
+    width: 400px;
+    height: 500px;
+    max-width: 300px;
+}
+.second{
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    text-overflow:initial;
+    max-height: 200px;
+    overflow: scroll;
+}
+.glavni{
+    background-color: yellow;
+}
+.prvi{
+    border-width:5px thick;
+    border-style: dashed;
+    border-color: red;
+    padding: 50px;
+    margin:50px;
+    width: 300px;
+
+}
+.drugi {
+    border-width:5px;
+    border-style: solid;
+    border-color: green;
+    padding-top: 50px;
+    width: 400px;
+}
+.treci {
+   border-width: 5px thick;
+   border-style: dashed;
+   border-color: red;
+   padding: 50px;
+   width: 200px;
+}
