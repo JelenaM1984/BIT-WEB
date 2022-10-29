@@ -1,0 +1,19 @@
+.tabela{
+margin: auto;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: small;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.row:hover{
+    background-color: yellow;
+}
+.naslov{
+    background-color: red;
+}
+.image{
+    height: 100px;
+}
+.row:nth-child(odd) {background: rgb(190, 186, 186)}
