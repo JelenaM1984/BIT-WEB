@@ -1,0 +1,24 @@
+div{
+    margin:20px;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+}
+.header{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.submit{
+    
+    display: block;
+    text-align: center;
+}
+
+.field{
+   
+   
+}
+.submit1{
+    background-color: red;
+}
