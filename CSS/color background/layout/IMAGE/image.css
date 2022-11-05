@@ -1,0 +1,27 @@
+/* .container{
+    background-image: url(../../../planina.jpg);
+    background-attachment: fixed;
+} */
+.container{
+    background-image: url(../../../Planina1.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+
+}
+.image1{
+    height: 200px;
+   display:-webkit-box;
+   margin-left: auto;
+}
+.image2{
+    width: 200px;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+}
+.image3{
+    width: 200px;
+    height: 200px;
+    
+}
