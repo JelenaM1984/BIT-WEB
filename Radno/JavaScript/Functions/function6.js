@@ -21,3 +21,22 @@ for (let i = 0; i < firstArray.length; i++) {
     return niz;
 }
 console.log(combineArrays(['a','b','c'],[1,2,3]));
+//Write a function that rotates a list by k elements.
+var x=[1,2,3,4,5]
+function rotateElements(nums,k){
+     for (let i = 0; i < k; i++) {
+        nums.unshift(nums.pop());
+    }
+  
+    return nums;
+}
+console.log(rotateElements([1,2,3,4,5],4))
+//Write a function that takes a number and returns array of its digits.
+function numReturn(number){
+    var a=[];
+    a=Array.from(String(number),Number);
+    return a;
+}
+console.log(numReturn(5878))
+//Write a program that prints a multiplication table for numbers up to 12.
+//Write a function to input temperature in Centigrade and convert to Fahrenheit.
