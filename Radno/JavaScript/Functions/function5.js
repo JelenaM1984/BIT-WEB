@@ -45,7 +45,7 @@ function numberOfInteger(array){
    rezultat.push[element[i]];
   }
    else if(array [element] !=Number.isInteger(a)) {
-rezultat.push[elemen[i]]
+rezultat.push[element[i]]
   }
   } return rezultat
 }
