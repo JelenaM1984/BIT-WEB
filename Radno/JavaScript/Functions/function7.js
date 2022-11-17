@@ -75,3 +75,18 @@ function validatePassword(password){
     
   
 }
+//Create a function that finds how many prime numbers there are, up to the given integer.
+function primeNumber(num){
+   var num = 20;
+
+    for (var i = 2; i <= num; i++) {
+     count = 0;
+     for (var j = 2; j <= i / 2; j++) {
+      if (i % j == 0) {
+       count++;
+       break;
+      }
+    }
+}
+}
+console.log(primeNumber(num));
