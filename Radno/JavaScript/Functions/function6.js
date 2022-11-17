@@ -86,3 +86,9 @@ function maxAndMin(array) {
   return "maximal number in array is " + max + " and minimal number is " + min;
 }
 console.log(maxAndMin([25, 68, -58, 7, null]));
+// Write a function to find the median element of array.
+function medianElement(array){
+    a=[5,8,9,-47,69];
+    
+}
+//Write a function to find the element that occurs most frequently.
