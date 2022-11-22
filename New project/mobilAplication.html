@@ -10,10 +10,12 @@
       src="https://kit.fontawesome.com/128acc9cfc.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
     <div class="header">
-      <div>
+      <div class="naslov">
         <h1 class="h1"><span class="span"> BUILD</span> ESTATE</h1>
       </div>
       <div class="nav">
@@ -76,23 +78,30 @@
         <div class="third"></div>
       </div>
       <section>
-        <div class="row">
           <div class="col">
             <div class="testimonial">
-              <img src="./images/t1.jpg" alt="williamson" />
-              <div class="name">WILLIAMSON</div>
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+              <div class="imageAll">
+              <div class="image">
+                <img src="./images/t1.jpg" alt="williamson" />
               </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <div class="nameStars">
+                <p> WILLIAMSON</p>
+                <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="paraf">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, 
+                dolor sit amet consectetur adipisicing elit. Saepe hic possimus omnis, ab quam,
+                </p>
             </div>
           </div>
-        </div> 
-        <div class="row">
         <div class="col">
             <div class="testimonial">
               <img src="./images/t2.jpg" alt="jenifer lopez" />
@@ -104,12 +113,9 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <div class="paraf"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
             </div>
           </div>
-        </div>
-          
-        <div class="row">
           <div class="col">
             <div class="testimonial">
               <img src="./images/t3.jpg" alt="selena gomez" />
@@ -119,12 +125,12 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <i class="fa-regular fa-star"></i>  
+              </div> 
+              <div class="paraf"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
+           
             </div>
           </div>
-        </div>
       </section>
       <div class="text">
         <h1>Get In Touch With Us</h1>
@@ -143,13 +149,14 @@
 </div>
 <div class="conect">
   <h3 >CONECT US</h3>
- <img src="./images/facebook.ico" alt="facebook">
- <img src="./images/twitter.png" alt="twitter">
- <img src="./images/insta.png" alt="instagram">
- <img src="./images/linkedin.png" alt="linkedin">
- <br>
+  <div class="spanConect">
+<span><ion-icon name="logo-facebook"></ion-icon></span>
+<span><ion-icon name="logo-twitter"></ion-icon></span>
+<span><ion-icon name="logo-instagram"></ion-icon></span>
+<span><ion-icon name="logo-linkedin"></ion-icon></span>
 </div>
-<div class="addres">
+</div>
+<div class="adress">
   <h3 >ADRESS</h3>
   <p>1680 Richmond St, Corner in, ON N58 3d7, USA</p>
 </div>
@@ -174,13 +181,16 @@
     <input type="text" name="Name" placeholder="Name">
     <input type="text" name="mail" placeholder="E-mail">
     <input type="text" name="telephone" placeholder="Telephone"><br>
-    <textarea type="text" name="message" cols="15" rows="2"></textarea>
+    <textarea type="text" name="message"placeholder="Message"></textarea>
+    <input type="Submit" value="submit">
   </form>
-</div>
-<div class="submit">
-  <button type="submit">Submit</button>
+   
 </div>
 </section>
+<footer class="submitOne">
+ 
+</footer>
+
     </div>
   </body>
 </html>

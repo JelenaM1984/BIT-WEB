@@ -72,6 +72,9 @@
     .h1 {
         text-align: center;
     }
+    .naslov{
+        padding-top: 20px;
+    }
     nav{
         display: flex;
         color: antiquewhite;
@@ -97,7 +100,7 @@
     text-align: center;
     padding: 20%;
     margin-top: 20px;
-
+    width: 100%;
 }
  h1{
     text-align: center;
@@ -162,60 +165,52 @@ button{
     color: #6D6D6D;
  }
  .imageOne{
-    width: 300px;
-    height: 200px;
+    width:100%;
+    /* height: 200px; */
     display: block;
-    position: relative;
-    overflow: hidden;
      }
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        flex: 0 1 50%;
-       
-    }
     .col{
-        flex:10%;
-        padding: 15px;
-        flex: 0 0 15%;
-    }
-    .testimonial{
         display: flex;
-        background: #146EB4;
+        flex-direction: column;
+        width:100%;
+        padding: 10px; 
+        margin:8px; 
+        background-color: #146EB4;
+        }
+    .testimonial{
         padding: 1%;
         color: antiquewhite;
-        font-family: tekst6;
-        align-content: flex-end;
-        text-align:center;
+        font-family: tekst6; 
     }
     .testimonial img {
-    display: flex;
     width:100px;
     height: 100px;
     border-radius: 50%;
-    flex-direction: column;
+    
     }
-    .name{
+    .imageAll{
         display: flex;
+        flex-direction: row;
+        gap:10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nameStars{
         font-size: 15px;
         text-transform: uppercase;
         margin: 20px 0;
         color: black;
         font-family: tekst10;
-       justify-content:space-around;
-
+        text-align:start;
     }
-    .stars{
-        display: flex;
-        color:#FF9801 ;
-        align-items: flex-end;
-        justify-content:flex-end;
-     
-    }
-    p{
-        font-family: tekst5;
-        display: flex;
-        justify-content:flex-end;
+     i{
+     display: flex;
+     color:#FFF;
+     flex-direction: row;
+}
+    .paraf{
+        text-align: center;
+        color: #FFF;
     }
    .contact{
     background-color: #529fdd;
@@ -225,9 +220,112 @@ button{
     font-family: tekst2;
    }  
 .contactForm{
-    display: flex;
-    justify-content: center;
-    flex: row;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* padding: 20px ; */
+   width: 100%;
+   margin-top: 20px;
 }
+.contact{
+    background-color: #03fc88;
+    text-align:center;
+    font-family:tekst5;
+    color: #FFF;
+    padding: 10px;
+}
+.contact img{
+    width: 20px;
+    color: #03fc88;
+    padding-right: 5px;
+    background-color: #03fc88;
+}
+.contact span{
+    font-size: 10px;
+}
+.conect{
+    display: flex;
+    flex-direction: column;
+    background-color:#df03fc;
+    font-family: tekst5;
+    font-size: 10px;
+    color:#FFF;
+    text-align: center;
+    font-family: tekst5;
+}
+
+.conect img{
+  
+    width:20px;
+    background-color: #df03fc;
+   padding:5px
+  
+}
+.conect span{
+    font-size: 20px;
+    font-family: tekst5;
+    text-align: center;
+    
+}
+.adress{
+    background-color: #146EB4;
+    color: #FFF;
+    text-align: center;
+    font-family: tekst5;
+}
+.adress p{
+    font-size: 10px;
+}
+.house{
+    background-color: #529fdd;
+    color: #FFF;
+    text-align: center;
+
+}
+.house img{
+    background-color: #529fdd;
+    width:100px;
+    text-decoration: none;
+    
+}
+.mapa{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    
+}
+.mapa iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    padding-bottom: 40%;
+}
+.mail{
+    padding: 20px;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    padding: 5px;
+}
+input[type=text]{
+    width:100%;
+    padding: 4px;
+    margin-bottom: 10px;
+  
+}
+input[type=submit] {
+    width: 30%;
+    background-color: #FF9801;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
 }
