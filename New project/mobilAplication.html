@@ -102,33 +102,51 @@
                 </p>
             </div>
           </div>
-        <div class="col">
-            <div class="testimonial">
-              <img src="./images/t2.jpg" alt="jenifer lopez" />
-              <div class="name">JENIFER LOPEZ</div>
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <div class="paraf"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
-            </div>
-          </div>
           <div class="col">
             <div class="testimonial">
-              <img src="./images/t3.jpg" alt="selena gomez" />
-              <div class="name">SELENA GOMEZ</div>
-              <div class="stars">
+              <div class="imageAll">
+              <div class="image">
+                <img src="./images/t2.jpg" alt="jeniferLopez" />
+              </div>
+              <div class="nameStars">
+                <p> Jeniffer Lopez</p>
+                <p>
+                <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>  
-              </div> 
-              <div class="paraf"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
-           
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="paraf">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, 
+                dolor sit amet consectetur adipisicing elit. Saepe hic possimus omnis, ab quam,
+                </p>
+            </div>
+          </div> <div class="col">
+            <div class="testimonial">
+              <div class="imageAll">
+              <div class="image">
+                <img src="./images/t3.jpg" alt="selenaGomez" />
+              </div>
+              <div class="nameStars">
+                <p> Selena Gomez</p>
+                <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="paraf">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, 
+                dolor sit amet consectetur adipisicing elit. Saepe hic possimus omnis, ab quam,
+                </p>
             </div>
           </div>
       </section>
@@ -143,9 +161,14 @@
 <section class="contactForm">
 <div class="contact">
   <h3 >CONTACT US</h3>
- <img src="./images/phone.png" alt="phone"><span>+0(12) 000 123 3120</span>
- <br>
- <img src="./images/email.jpg" alt="e.mail"><span>mail@example.com</span>
+  <div class="spanContact">
+  <ion-icon name="call-outline"></ion-icon> 
+  <p>+0(12) 000 123 3120</p><br>
+  <div class="spanContactOne">
+  <ion-icon name="at-outline"></ion-icon>
+  <p>mail@example.com</p>
+ </div>
+</div>
 </div>
 <div class="conect">
   <h3 >CONECT US</h3>
@@ -157,8 +180,12 @@
 </div>
 </div>
 <div class="adress">
-  <h3 >ADRESS</h3>
-  <p>1680 Richmond St, Corner in, ON N58 3d7, USA</p>
+  <h3 >ADDRESS</h3>
+  <div class="icon">
+  <ion-icon name="location-outline" ></ion-icon>
+  <p>1680 Richmond St, Corner in, ON N58 3d7, USA</p> 
+ </div>
+  
 </div>
 <div class="house">
   <img src="./images/house.png" alt="house">
@@ -187,10 +214,21 @@
    
 </div>
 </section>
-<footer class="submitOne">
- 
+<footer class="footer">
+  <div class="navEnd">
+    <ul class="lista">
+      <li class="one">Home</li>
+      <li class="two">About</li>
+      <li class="three">Services</li>
+      <li class="four">Stats</li>
+      <li class="five">Agents</li>
+      <li class="five">Testemonials</li>
+    </ul>
+    
+    <p><ion-icon name="information-circle-outline"></ion-icon>2017. Build Estate All Rights Reserved</p>
 </footer>
 
     </div>
+    
   </body>
 </html>
