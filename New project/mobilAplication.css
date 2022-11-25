@@ -136,7 +136,16 @@ button{
 .third{
     border:0.3px solid black;
     width: 10%;
-    
+   }
+.centralImage{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+.lista{
+    padding: 0;
+    font-size: 5px;
    }
 .text h1{
     color:black !important;
@@ -159,16 +168,33 @@ button{
  }
 .lista ul li{
     list-style-image: url(./images/arrow_bullet.png);
-    font-family: foto;
+    font-family: tekst8;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #6D6D6D;
+    font-size:20px;
+    padding-left: 20px;
  }
-.imageOne{
-    width:100%;
-    /* height: 200px; */
-    display: block;
-     }
+ .imgOne{
+    padding-top: 0; 
+}
+    .down h2{
+        font-family: tekst9;
+        font-size: 30px;
+    }
+.down p{
+    font-family: tekst2;
+    font-size: 20px;
+}
+.down ul{
+    padding-left: 0;
+    font-family: tekst8;
+    padding-bottom: 0;
+}
+.celebrity{
+    display: flex;
+    flex-wrap: wrap;
+}
 .col{
         display: flex;
         flex-direction: column;
@@ -182,19 +208,20 @@ button{
         color: antiquewhite;
         font-family: tekst6; 
     }
+    .imageAll{
+        display: flex;
+
+    }
+.testimonialsAll{
+    display: flex;
+    flex-direction: column;
+    }
 .testimonial img {
     width:100px;
     height: 100px;
     border-radius: 50%;
     border: 5px solid white;
     padding: 5px
-    }
-.imageAll{
-        display: flex;
-        flex-direction: row;
-        gap:10px;
-        justify-content: flex-start;
-        align-items: center;
     }
 .nameStars{
         font-size: 15px;
@@ -214,11 +241,15 @@ button{
         color: #FFF;
         font-family: tekst9;
     }
+    .gomez{
+       flex:60%;
+       flex-wrap: wrap;
+      
+    }
 .contact{
     background-color: #529fdd;
-   
    }
-    .contact h1{
+.contact h1{
     color: black;
     font-family: tekst2;
    }  
@@ -245,27 +276,27 @@ button{
 .spanContact{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
    justify-content: center;
    margin: 5px;
 }
 .spanContact p{
    display: flex;
-text-align: center;
+    text-align: center;
    margin: 0;
    flex-wrap: wrap;
    justify-content: center;
 }
 .spanContactOne {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 0;
-  padding: 2px;
- 
+ flex-direction: row;
+  justify-content: center;
+  margin:0
 }
 .spanContactOne p{
     display: flex;
     flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
   
 }
 .conect{
@@ -306,7 +337,6 @@ text-align: center;
     background-color: #529fdd;
     color: #FFF;
     text-align: center;
-
 }
 .house img{
     background-color: #529fdd;
@@ -316,9 +346,9 @@ text-align: center;
 }
 .mapa{
     overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+padding-bottom:56.25%;
+position:relative;
+height:0;
 }
 .mapa iframe{
     left:0;
@@ -326,7 +356,6 @@ text-align: center;
     height:100%;
     width:100%;
     position:absolute;
-    padding-bottom: 40%;
 }
 .mail{
     padding: 20px;
@@ -370,6 +399,7 @@ input[type=submit] {
     background-color: black;
     color: #FFF;
     font-family: tekst2;
+    font-size: 20px;
 }
 .one{
     padding:5px;
@@ -426,9 +456,7 @@ margin:0;
     padding-top: 20px;
     margin-top: 0;
     padding-left: 20px;
-   
  }
- 
  .nav{
     flex:1 0 40%;
     position: relative;
@@ -493,13 +521,21 @@ border:none;
         border:0.3px solid black;
         width: 10%;
         }
-
+.imageOne{
+    margin: 0;
+    width: 150%;
+        }
+.imageContainer{
+   display: flex;
+   flex-direction: column;
+}
 .lista ul li{
-     list-style-image: url(./images/arrow_bullet.png);
-     font-family: foto;
+    list-style-image: url(./images/arrow_bullet.png);
+    font-family: foto;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #6D6D6D;
+    padding-left: 0;
  }
 .h2{
     color:#529fdd;
@@ -517,7 +553,8 @@ border:none;
     align-content: flex-start;
     padding-top: 5px;
     margin:2%;
-    font-size: 25px;
+    font-size: 20px;
+    height: 50%;
     }
 .imageBuilding{
     display: flex;
@@ -527,8 +564,10 @@ display: flex;
 flex-direction: row;
 }
 .centralImage img{
-    width: 40%;
+    width: 60%;
+    height: 50%;
     padding-top: 30px;
+
 }
 .down{
     text-align: left;
@@ -540,7 +579,7 @@ flex-direction: row;
     display: flex;
     flex-direction: column;
     width:100%;
-    padding: 10px; 
+    padding-right: 10px; 
     margin:8px; 
     background-color: #146EB4;
     }
@@ -589,7 +628,7 @@ i{
 }
 .contact{
     background-color: #529fdd;
-   
+    padding: 10px;
    }
     .contact h1{
     color: black;
@@ -599,61 +638,50 @@ i{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    /* padding: 20px ; */
-   width: 100%;
-   margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
 }
 .contact{
+    display: flex;
+    flex-direction: row;
     background-color: #03fc88;
     text-align:center;
     font-family:tekst5;
-    color: #FFF;
-   
-}
-.contact span{
-    font-size: 10px;
-    font-family: tekst5;
-    text-align: center;
+    color: #FFF; 
 }
 .spanContact{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-   justify-content: center;
-   margin: 5px;
+    align-content:flex-end;
+    justify-content: center;
+    padding: 5%;
+}
+.spanContactOne{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .spanContact p{
-   display: flex;
-text-align: center;
-   margin: 0;
-   flex-wrap: wrap;
-   justify-content: center;
-}
-.spanContactOne {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 0;
-  padding: 2px;
- 
+    margin: 0;
 }
 .spanContactOne p{
-    display: flex;
-    flex-direction: column;
-  
+    margin:0;
 }
 .conect{
     display: flex;
     flex-direction: column;
-    background-color:#df03fc;
+    background-color:#eb4034;
     font-family: tekst5;
     font-size: 15px;
     color:#FFF;
     text-align: center;
+    justify-content: space-around;
 }
 .conect span{
     font-size: 20px;
     font-family: tekst5;
     text-align: center;
+    padding:20px;
 }
 .adress{
     display: flex;
@@ -662,11 +690,13 @@ text-align: center;
     background-color: #146EB4;
     color: #FFF;
     text-align: center;
+    align-items: center;
     font-family: tekst5;
 }
 .adress p{
-    font-size: 15px;
+    font-size: 20px;
     font-family: tekst5;
+    margin: 0;
 }
 .icon{
     display: flex;
@@ -683,12 +713,160 @@ text-align: center;
 }
 .house img{
     background-color: #529fdd;
-    width:100px;
+    width:200px;
     text-decoration: none;
-   
 }
-.mapa{
-   width: 100%;
+.mapa {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .mapa iframe{
+        left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+.mail{
+    padding: 20px;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    padding: 5px;
+}
+.inputField{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+.txtClass{
+resize: none;
+display: flex;
+height: 100px;
+}
+input[type=text]{
+    width:100%;
+    padding: 4px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 15px;
+}
+input[type=submit] {
+    width: 10%;
+    background-color: #FF9801;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .footer{
+    display: flex;
+    width:100%;
+    background-color:black ;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .lista{
+    display: flex;
+    flex-direction: ;
+    width: 100%;
+    padding: 20px;
+  }
+.navEnd ul li{
+    list-style: none;
+    background-color: black;
+    color: #FFF;
+    font-family: tekst2;
+}
+.one{
+    padding:5px;
+    margin: 10px;
+}
+.two {
+    padding: 5px;
+    margin: 10px;
+}
+.three{
+    padding: 5px;
+    margin: 10px;
+}
+.four{
+    padding: 5px;
+    margin: 10px;
+}
+.five{
+    padding: 5px;
+    margin: 10px;
+}
+.footer p{
+    color: #FFF;
+    font-family: tekst2;
+    text-align: center;
+}
+}
+@media  (min-width: 1200px) {
+.mainContainer{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+ }
+.centralPlace{
+    margin-right: 50px;
+    margin-left: 20px;
+    padding: 40px;
+}
+.centralImage img{
+    width: 150%;
+    padding: 20px;
+}
+.lista ul{
+    font-family: tekst6;
+    margin:0;
+    font-size: 20px;
+}
+.down{
+align-items: center;
+}
+.down h2{
+    font-size: 30px;
+}
+.down p{
+    font-size: 20px;
 }
 
+.celebrity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+.imageAll{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+.gomez{
+    width:70%;
+}
+.mapa {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+ .mapa iframe{
+        left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
 }
