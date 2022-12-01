@@ -1,0 +1,11 @@
+fieldset {
+  background-color: #333;
+  padding: 1em; }
+  fieldset ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  fieldset li {
+    display: inline-block; }
+
+/*# sourceMappingURL=id.css.map */

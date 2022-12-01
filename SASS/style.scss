@@ -1,0 +1,22 @@
+$background-color:yellow;
+$visited-color:orange;
+$not-visited:green;
+$font-size:15px;
+$text-decoration:none;
+@mixin text-style($size){
+   text-decoration: $text-decoration;
+    font-size:$size;
+}
+.link{
+    a:active{
+        background-color:$background-color;  
+        @include text-style($font-size);
+}
+    a:visited{
+        color:$visited-color;
+}
+    a:link{
+        color: $not-visited;
+    }
+
+}

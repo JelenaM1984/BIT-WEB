@@ -1,0 +1,10 @@
+.link a:active {
+  background-color: yellow;
+  text-decoration: none;
+  font-size: 15px; }
+.link a:visited {
+  color: orange; }
+.link a:link {
+  color: green; }
+
+/*# sourceMappingURL=style.css.map */
