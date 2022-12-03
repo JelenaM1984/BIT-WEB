@@ -8,7 +8,7 @@ function maxnumber(a, b) {
     return "Numbers are even";
   }
 }
-console.log(maxnumber(30, 55));
+console.log(maxnumber(60, 55));
 console.log(maxnumber(55, 55));
 //Write a program that checks if a given number is odd.
 function oddNumber(x) {
@@ -22,12 +22,12 @@ console.log(oddNumber(5));
 //Write a program that checks if a given number is a three digit long number.
 function threeDigitNumber(y) {
   if (y > 99 && y < 1000) {
-    return "It is a three digit number";
+    return "It is a three digit long number";
   } else {
-    return "It is not a three digit number";
+    return "It is not a three digit long number";
   }
 }
-console.log(threeDigitNumber(458));
+console.log(threeDigitNumber(1000));
 //4. Write a program that calculates an arithmetic mean of four numbers.
 function aritm(a, b, c, d) {
   return (a + b + c + d) / 4;
@@ -60,18 +60,24 @@ console.log(string);
 //6.Write a program that draws a horizontal chart representing three given values. For example, values are 5, 3, and 7,
 
 //7. Write a program that calculates a number of digits of a given number.
-function digits(a) {
-  return ("" + a).length;
+function digits(number) {
+  return ("" + number).length;
 }
-console.log(digits(56987));
+console.log(digits(56987568684));
 //8.Write a program that calculates a number of appearances of a given number in a given arrey
 var a = [2, 4, 7, 8, 7, 7, 1];
-var e = 7;
-var count = 0;
-for (i = 0; i < a.length; i++);
-if (a[i] == element) {
-  count++;
+function countNumber(arr, n){
+ 
+  for(var i=0;i<arr.length;i++){
+   var result=0; 
+   var n=7;
+   if (arr[i]==n){
+      result++;
+    }
+    
+  }return result;
 }
-console.log(count);
+console.log(countNumber([2, 4, 7, 8, 7, 7, 1],7))
+
 
 //9.Write a program that calculates the sum of odd elements of a given array.
