@@ -1,0 +1,419 @@
+@font-face {
+  font-family: span;
+  src: url(./fonts/Roboto-Black.ttf); }
+@font-face {
+  font-family: navigacija;
+  src: url(./fonts/fontawesome-webfont.ttf); }
+@font-face {
+  font-family: foto;
+  src: url(./fonts/fontawesome-webfont.eot); }
+@font-face {
+  font-family: tekst;
+  src: url(./fonts/glyphicons-halflings-regular.eot); }
+@font-face {
+  font-family: tekst1;
+  src: url(./fonts/fontawesome-webfont.woff); }
+@font-face {
+  font-family: tekst2;
+  src: url(./fonts/Roboto-Light.ttf); }
+@font-face {
+  font-family: tekst3;
+  src: url(./fonts/Roboto-MediumItalic.ttf); }
+@font-face {
+  font-family: tekst4;
+  src: url(./fonts/Roboto-Italic.ttf); }
+@font-face {
+  font-family: tekst5;
+  src: url(./fonts/Roboto-Bold.ttf); }
+@font-face {
+  font-family: tekst6;
+  src: url(./fonts/Roboto-ThinItalic.ttf); }
+@font-face {
+  font-family: tekst7;
+  src: url(./fonts/FontAwesome.otf); }
+@font-face {
+  font-family: tekst8;
+  src: url(./fonts/glyphicons-halflings-regular.ttf); }
+@font-face {
+  font-family: tekst9;
+  src: url(./fonts/Roboto-Thin.ttf); }
+@font-face {
+  font-family: tekst10;
+  src: url(./fonts/Roboto-Black.ttf); }
+@media (max-width: 768px) {
+  .span {
+    color: #FF9801;
+    padding: 5px;
+    border-top: 5px solid #6D6D6D;
+    border-left: 5px solid #6D6D6D;
+    border-bottom: 5px solid #6D6D6D;
+    text-align: center; }
+
+  .naslov {
+    padding-top: 20px; }
+
+  .h1 {
+    text-align: center;
+    color: #6D6D6D;
+    font-family: span;
+    font-size: medium;
+    margin-bottom: 7%; }
+
+  .nav {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    aligne-items: center;
+    text-align: center;
+    width: 70%;
+    height: 80px;
+    background-color: #7fc2f7;
+    font-family: span;
+    margin: 0 auto;
+    padding: 20px;
+    color: aliceblue; }
+    .nav a {
+      color: aliceblue;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      aligne-items: center; }
+
+  .foto {
+    height: 80%;
+    width: 60%;
+    background: aliceblue url(./images/banner3.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 20%;
+    margin-top: 20px; }
+
+  h1 {
+    color: aliceblue;
+    font-family: span; }
+
+  button {
+    background-color: #146EB4;
+    color: whitesmoke;
+    font-family: tekst9;
+    border: none;
+    border-radius: 10px;
+    padding: 5px; }
+
+  .cube {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+  .first {
+    border: 0.3px solid black;
+    width: 10%; }
+
+  .second {
+    border: 0.3px solid black;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    margin: 1%; }
+
+  .third {
+    border: 0.3px solid black;
+    width: 10%; }
+
+  .centralImage {
+    text-align: justify;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    aligne-items: center; }
+
+  .lista {
+    padding: 0;
+    font-size: 5px; }
+
+  .text h1 {
+    color: black !important;
+    margin: 3%;
+    text-align: center;
+    font-family: tekst9;
+    font-size: 20px; }
+
+  .h2 {
+    color: #7fc2f7;
+    text-align: center;
+    font-family: tekst9;
+    font-size: 20px; }
+
+  .paragraf {
+    font-family: tekst9;
+    font-size: 20px;
+    margin: 5%;
+    text-align: left;
+    text-decoration: #6D6D6D; }
+
+  .lista ul {
+    padding-left: 0px; }
+    .lista ul li {
+      list-style-image: url(./images/arrow_bullet.png);
+      font-family: tekst9;
+      margin-top: 1rem;
+      color: #6D6D6D;
+      font-size: 20px;
+      padding-left: 10px; }
+
+  .imageOne {
+    padding-top: 0;
+    width: 100%;
+    height: 50%; }
+
+  .down h2 {
+    font-family: tekst9;
+    font-size: 20px;
+    text-align: center; }
+  .down p {
+    font-family: tekst9;
+    font-size: 20px; }
+  .down ul {
+    padding-left: 0;
+    font-family: tekst8;
+    padding-bottom: 0; }
+
+  .celebrity {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aligne-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #7fc2f7; }
+
+  .testimonial {
+    padding: 1%;
+    color: aliceblue;
+    font-family: tekst2;
+    font-size: 10px; }
+
+  .imageAll {
+    display: flex; }
+
+  .testimonialsAll {
+    display: flex;
+    flex-direction: column; }
+
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    padding: 5px; }
+
+  .nameStars {
+    font-family: span;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: black;
+    text-align: start; }
+
+  i {
+    display: flex;
+    color: aliceblue;
+    flex-direction: row; }
+
+  .paraf {
+    text-align: center;
+    color: aliceblue;
+    font-family: tekst9;
+    font-size: 15px; }
+
+  .gomez {
+    flex: 60%;
+    flex-wrap: wrap; }
+
+  .contact {
+    background-color: #7fc2f7; }
+
+  .h1 {
+    color: black;
+    font-family: tekst9;
+    font-size: 10px; }
+
+  .contactForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* padding: 20px ; */
+    width: 100%;
+    margin-top: 20px; }
+
+  .contact {
+    background-color: #03fc88;
+    text-align: center;
+    font-family: tekst5;
+    color: #FFF; }
+
+  .contact span {
+    font-size: 10px;
+    font-family: tekst5;
+    text-align: center; }
+
+  .spanContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px; }
+
+  .spanContact p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aligne-items: center;
+    margin: 0;
+    flex-wrap: wrap; }
+
+  .spanContactOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    aligne-items: center;
+    margin: 0; }
+
+  .spanContactOne p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aligne-items: center;
+    margin-top: 0;
+    margin-bottom: 0; }
+
+  .conect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aligne-items: center;
+    background-color: #df03fc;
+    font-family: tekst5;
+    font-size: 15px;
+    color: aliceblue;
+    text-align: center; }
+
+  .conect span {
+    font-family: tekst5;
+    font-size: 20px;
+    text-align: center; }
+
+  .adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #7fc2f7;
+    color: aliceblue;
+    text-align: center;
+    font-family: tekst5; }
+
+  .adress p {
+    font-family: tekst5;
+    font-size: 15px; }
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    aligne-items: center;
+    flex-wrap: wrap;
+    padding: 10px; }
+
+  .house {
+    background-color: #7fc2f7;
+    color: aliceblue;
+    text-align: center; }
+
+  .house img {
+    background-color: #7fc2f7;
+    width: 100px;
+    text-decoration: none; }
+
+  .mapa {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0; }
+
+  .mapa iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+
+  .mail {
+    padding: 20px; }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    padding: 5px; }
+
+  input[type=text] {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 10px; }
+
+  input[type=submit] {
+    width: 30%;
+    background-color: #FF9801;
+    color: aliceblue;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    aligne-items: center;
+    width: 100%;
+    background-color: black; }
+
+  .lista {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px; }
+
+  .navEnd ul li {
+    list-style: none;
+    background-color: black;
+    color: aliceblue;
+    font-family: span;
+    font-size: 10px; }
+  .navEnd .one {
+    padding: 5px;
+    margin: 5px; }
+  .navEnd .two {
+    padding: 5px;
+    margin: 5px; }
+  .navEnd .three {
+    padding: 5px;
+    margin: 5px; }
+  .navEnd .four {
+    padding: 5px;
+    margin: 5px; }
+  .navEnd .five {
+    padding: 5px;
+    margin: 5px; }
+
+  .footer p {
+    color: aliceblue;
+    font-family: tekst2;
+    font-size: 15px;
+    text-align: center; } }
+
+/*# sourceMappingURL=newProject.css.map */

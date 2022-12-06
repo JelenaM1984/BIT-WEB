@@ -176,7 +176,8 @@ button{
     padding-left: 20px;
  }
  .imgOne{
-    padding-top: 0; 
+    padding-top: 0;
+   
 }
     .down h2{
         font-family: tekst9;
@@ -523,7 +524,6 @@ border:none;
         }
 .imageOne{
     margin: 0;
-    width: 150%;
         }
 .imageContainer{
    display: flex;
