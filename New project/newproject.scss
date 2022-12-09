@@ -442,11 +442,11 @@ input[type=submit] {
 @media(min-width: 768px){
 .header{
     background-image: url(./images/banner3.jpg);
-    width: $fullWidth;
+    width:80%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 300px;
     margin:0;
         }
 .h1 {
@@ -469,12 +469,12 @@ input[type=submit] {
     position: relative;
     text-align: right;
     color:$colorFont;
-    @include font(tekst9, 20px);        
-    padding-top: 20px;
+    @include font(tekst9, 10px);        
+    padding-top: 10px;
     a{
         text-decoration: none;
         color:$colorFont;
-        padding-right: 20px;
+        padding-right: 10px;
         }
     }
 .naslov{
@@ -525,9 +525,10 @@ input[type=submit] {
         }
 .imageOne{
     margin: 0;
+    width: $fullWidth;
         }
 .imageContainer{
-    @include displayFlex(column, center, center);
+    @include displayFlex(column, start, center);
     }
 .lista{
      ul{
@@ -544,8 +545,7 @@ input[type=submit] {
         }
 .h2{
     color:$colorBackground;
-    @include font(tekst9, 20px);
-    text-align: left;
+    @include font(tekst9, 25px);
     }
 .paragraf {
     @include font(tekst2,20px);
@@ -567,7 +567,7 @@ input[type=submit] {
 .centralImage{
     @include displayFlex(row, center, center); 
     img{
-        width: 60%;
+        width: 100%;
         height: 50%;
         padding-top: 30px;
         }
@@ -579,11 +579,15 @@ input[type=submit] {
     margin-bottom: 30px;
     }
 .col{
-    @include displayFlex(column, center, center);
     width:$fullWidth;
     padding-right: 10px; 
     margin:8px; 
     background-color: $colorBackground;
+    paraf{
+        text-align: center;
+        color: $colorFont;
+        font-family: tekst9;
+    }
 }
 .testimonial{
     padding: 1%;
@@ -599,28 +603,21 @@ input[type=submit] {
     }
 .imageAll{
     @include displayFlex(row, center, flex-start);
-    gap:10px;
-    justify-content: flex-start;
-    align-items: center;
+    gap:40px;
 }
 .nameStars{
     font-size: 15px;
     text-transform: uppercase;
     margin: 20px 0;
-    color:black;
+    color:$defoultColor;
     font-family: tekst10;
     text-align:start;
-}
-        i{
-         display: flex;
-         color:#FFF;
-         flex-direction: row;
-        }
-.paraf{
-    text-align: center;
-    color: #FFF;
-    font-family: tekst9;
-}
+    i{
+        @include displayFlex(row, center, center);
+        color:$colorFont;
+    }
+    }
+
 .testimonialsAll{
     display:flex;
 }
@@ -628,17 +625,15 @@ input[type=submit] {
      width: 47%;
     }
 .contact{
-    background-color: #529fdd;
+    background-color:$colorBackground;
     padding: 10px;
-     display: flex;
-    flex-direction: row;
+    @include displayFlex(column, center, center);
     background-color: #03fc88;
-    text-align:center;
     font-family:tekst5;
-    color: #FFF; 
+    color: $colorFont; 
 }
     h1{
-        color: black;
+        color:$defoultColor;
         font-family: tekst2;
         } 
 
@@ -646,36 +641,27 @@ input[type=submit] {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 100%;
+    width:$fullWidth;
     margin-top: 20px;
 }
 .spanContact{
-    display: flex;
-    flex-direction: row;
-    align-content:flex-end;
-    justify-content: center;
-    padding: 5%;
+    @include displayFlex(row,center,flex-end);
+   padding: 5%;
     p{
         margin: 0;
     }
 }
 .spanContactOne{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include displayFlex(row, center, center);
         p{
             margin:0;
     }
 }
 .conect{
-    display: flex;
-    flex-direction: column;
+    @include displayFlex(column, space-around, center);
+    @include font(tekst5,15px);
     background-color:#eb4034;
-    font-family: tekst5;
-    font-size: 15px;
-    color:#FFF;
-    text-align: center;
-    justify-content: space-around;
+    color:$colorFont;
    span{
         font-size: 20px;
         font-family: tekst5;
@@ -684,33 +670,26 @@ input[type=submit] {
     } 
 }
 .adress{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #146EB4;
-    color: #FFF;
-    text-align: center;
-    align-items: center;
+    @include displayFlex(column, center, center);
+    background-color: $colorBackground;
+    color: $colorFont;
     font-family: tekst5;
         p{
-            font-size: 20px;
-            font-family: tekst5;
+            @include font(tekst5,20px);
             margin: 0;
         }
 }
 .icon{
-    display: flex;
+    @include displayFlex(column, center, center);
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
     padding: 10px;
 }
 .house{
-    background-color: #529fdd;
-    color: #FFF;
+    background-color: $colorBackground;
+    color: $colorFont;
     text-align: center;
         img{
-            background-color: #529fdd;
+            background-color: $colorBackground;
             width:200px;
             text-decoration: none;
         }
@@ -730,57 +709,53 @@ input[type=submit] {
     }
 }
 .mail{
-    padding: 20px;
-    }
-.textarea {
-    resize: none;
-    width: 100%;
-    padding: 5px;
-    }
+    padding: 20px
+}
 .inputField{
     width: $fullWidth;
     @include displayFlex(row, flex-start, center);
-    }
+  }
 .txtClass{
     resize: none;
     display: flex;
     height: 100px;
+    width: $fullWidth;
+    padding: 4px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 15px;
     }
-    input[type=text]{
-        width:100%;
-        padding: 4px;
-        margin-bottom: 10px;
-        margin-right: 5px;
-        padding: 15px;
-    }
-    input[type=submit] {
-        width: 40%;
-        background-color: #FF9801;
-        color: white;
+.submit {
+        width: 10%;
+        background-color:$colorSpan;
+        color: $colorFont;
         padding: 14px;
         margin: 8px 0;
-         border: none;
+        border: none;
         border-radius: 4px;
         cursor: pointer;
     }
 .footer{
-    display: flex;
-    width:100%;
-    background-color:black ;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
+    @include displayFlex(row, space-evenly, center);
+    width:$fullWidth;
+    background-color:$defoultColor;
+    p{
+        color: $colorFont;
+        font-family: tekst2;
+        text-align: center;
+        }
+    }
 .lista{
     display: flex;
-    width: 100%;
+    width: $fullWidth;
     // padding: 20px;
 }
 .navEnd{
     ul{
          li{
             list-style: none;
-            background-color: black;
-            color: #FFF;
+            background-color: $defoultColor;
+            color:$colorFont;
             font-family: tekst2;
         }
     }
@@ -805,11 +780,83 @@ input[type=submit] {
     padding: 5px;
     margin: 10px;
     }
-.footer{
-    p{
-            color: #FFF;
-            font-family: tekst2;
-            text-align: center;
-        }
+}
+@media  (min-width: 1200px) {
+.mainContainer{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    }
+.centralPlace{
+    margin-right: 50px;
+    margin-left: 20px;
+    padding: 40px;
+    }
+.centralImage img{
+    width: 150%;
+    padding: 20px;
+    }
+.lista{ 
+    ul{
+        @include font(tekst6,20px);
+        margin:0;
     }
 }
+.down{
+    align-items: center;
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+.celebrity{
+    @include displayFlex(row, space-evenly, center)
+    }
+.imageAll{
+    @include displayFlex(row,flex-start,center);
+    gap:10px;
+    }
+.gomez{
+    width:70%;
+    }
+.mapa {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+        
+     iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:$fullWidth;
+        position:absolute;
+        }
+    }
+    .inputField{
+        width: $fullWidth;
+        @include displayFlex(row, flex-start, center);
+      }
+    .txtClass{
+        resize: none;
+        display: flex;
+        height: 100px;
+        width: $fullWidth;
+        padding: 4px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        padding: 15px;
+        }
+    .submit {
+            width: 10%;
+            background-color:$colorSpan;
+            color: $colorFont;
+            padding: 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+    }
+    }
