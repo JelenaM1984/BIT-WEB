@@ -17,21 +17,54 @@ var jewelry = [
   { name: "Rolex", price: 500 },
   { name: "Diamond earings", price: 600 },
 ];
-function mostExpensive() {
-  var theMostExpencive = "";
-  var maxPrice = 0;
+function mostExpensive (jewelry) {
+  var mostExpensive = jewelry[0];
   for (var i = 0; i < jewelry.length; i++) {
-    if (jewelry[i].price > maxPrice) {
-      maxPrice = jewelry[i].price;
-      theMostExpencive = jewelry[i].name;
-    }
+      if (jewelry[i].price > mostExpensive.price) {
+          mostExpensive = jewelry[i];
+      }
   }
-  return (
-    "The most expecive jewlery is " +
-    theMostExpencive +
-    " and the price is " +
-    maxPrice
-  );
+  return 'The most expensive one is the ' + mostExpensive.name;
 }
-var max = mostExpensive();
-console.log(max);
+console.log(mostExpensive(jewelry));
+//Given a word, create an object that stores the indexes of each letter in an array. Make
+//sure the letters are the keys. Make sure the letters are symbols. Make sure the indexes
+//are stored in an array and those arrays are values.
+function mapLetters (word) {
+  var letters = {};
+  for (var i = 0; i < word.length; i++) {
+      if (!letters[word[i]]) {
+          letters[word[i]] = [];
+      }
+      letters[word[i]].push(i);
+  }
+  return letters;
+}
+
+console.log(mapLetters('dodo'));
+console.log(mapLetters('froggy'));
+console.log(mapLetters('grapes'));
+//And who cursed the most in the fight between you and your spouse? Given an object
+//with three rounds, with nested objects as your scores per round, return a string of who
+//cursed the most: If you, return 'ME'; If your spouse, return 'SPOUSE!'; If a draw, return
+//'DRAW!';
+function whoCursedTheMost (rounds) {
+  var me = 0;
+  var spouse = 0;
+  for (var i = 0; i < rounds.length; i++) {
+      if (rounds[i].me > rounds[i].spouse) {
+          me++;
+      } else if (rounds[i].me < rounds[i].spouse) {
+          spouse++;
+      }
+  }
+  if (me > spouse) {
+      return 'ME!';
+  } else if (me < spouse) {
+      return 'SPOUSE!';
+  } else {
+      return 'DRAW!';
+  }
+}
+
+console.log(whoCursedTheMost([{me: 10, spouse: 5 }, { me: 5, spouse: 10 }, { me: 0, spouse: 10, }]));

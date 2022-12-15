@@ -74,3 +74,28 @@ let person1=new Person("Milica","Stojadinovic");
 let person2=new Person("Nemanja", "Savic");
 console.log(person1.firstname,person2.lastname);
 
+let myCar={
+  make:"Hungary",
+  model: "Wolksvagen",
+  color:"Green",
+
+}
+
+arr1=[2,6,7,8];
+let findIndex=arr1.indexOf(7);
+console.log(findIndex);
+
+let arr2=['Milk','Bread','Apple']
+let arr3=['orange', "apple Juice"]
+arr2.splice(1,1,'Bananas','Eggs')
+// console.log(arr2);
+// arr2.sort();
+// console.log(arr2)
+// let arr4=arr2.concat(arr3);
+// console.log(arr4);
+// var arr5=arr2.indexOf("Milk");
+// console.log(arr5);
+var arr6=arr2.splice(1,0,"juice","pop")
+console.log(arr6);
+
+
