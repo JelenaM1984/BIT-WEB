@@ -68,3 +68,37 @@ function whoCursedTheMost (rounds) {
 }
 
 console.log(whoCursedTheMost([{me: 10, spouse: 5 }, { me: 5, spouse: 10 }, { me: 0, spouse: 10, }]));
+//
+function makeChange(number) {
+    var quarter = 0; //25
+    var dime = 0; //10
+    var nickel = 0; //5
+    var penny = 0; //1
+    var remainingChange = number;
+    while (remainingChange >= 25) {
+        remainingChange -= 25;
+        quarter++;
+    }
+    while (remainingChange >= 10) {
+        remainingChange -= 10;
+        dime++;
+    }
+    while (remainingChange >= 5) {
+        remainingChange -= 5;
+        nickel++;
+    }
+    while (remainingChange > 0) {
+        remainingChange -= 1;
+        penny++;
+    }
+    var obj = {
+        q: quarter,
+        d: dime,
+        n: nickel,
+        p: penny
+    }
+    return obj;
+}
+console.log(makeChange(13));
+console.log(makeChange(24));
+console.log(makeChange(92));
