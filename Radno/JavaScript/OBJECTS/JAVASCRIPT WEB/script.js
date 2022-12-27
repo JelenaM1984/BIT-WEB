@@ -83,25 +83,79 @@ promptBox();
 
 //Global JavaScript Objects (homework)
 
-function getRandom(min,max){
+function randomRange(min = 1, max = 50) {
+    var niz = [];
+    for (let i = 0; i < 10; i++) {
+        var a = Math.random() * (max - min) + min;
+        niz.push(a);
+    }
+    // console.log(niz);
+    return niz;
+}
+var x = randomRange();
+console.log(x);
+// Round
+// Create a function that uses the passed array of numbers and rounds all its elements to two decimals.
+// Print out the modified array in the console.
+// Use the first function for generating the input array.
+function roundTwoDecimals(input) {
+    var b = [];
+    for (let  i = 0; i < input.length; i++) {
+        b.push(+input[i].toFixed(2));
+    }
+    // console.log(b);
+    return b;
+}
+var y = roundTwoDecimals(x);
+console.log(y);
+// Floor
+// Create a function that uses the passed array of numbers and rounds all its elements to the nearest integer.
+// Print out the modified array in the console.
+// Use the first function for generating the input array.
+function roundToInteger(input) {
+    var c = [];
+    for (let  i = 0; i < input.length; i++) {
+        c.push(Math.round(input[i]));
+    }
+    // console.log(c);
+    return c;
+}
+var z = roundToInteger(x);
+console.log(z);
+// Max
+// Create a function that finds and prints out the biggest element in the passed array of numbers.
+function maxElement(input) {
+    var najveci = input[0];
+    for (let  i = 0; i < input.length; i++) {
+        if (input[i] > najveci) {
+            najveci = input[i];
+        }
+    }
+    // console.log(najveci);
+    return najveci;
+}
+console.log(maxElement(z));
+// DATE
+// Print out the whole date object in the console.
+// Print out the current time in the console.
+// Print out the current date in the console.
+function vreme() {
+    var a = new Date();
+    console.log(a);
+    var h = a.getHours();
+    var m = a.getMinutes();
+    console.log(`Sada je ${h}:${m} h`);
+    var y = a.getFullYear();
+    const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var mo = month[a.getMonth()];
+    var d = a.getDate();
+    console.log(`Datum:\n ${d}. ${mo} ${y}.`);
+}
+vreme();
 
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min) + min); 
 
-      
-}
- console.log(getRandom(1,50));
-//
-function getRandom(min,max){
-    min=1;
-    max=50;
-    var randomArray=[];
-for(let i = 0; i<max.length; i++) {
-    randomArray.push(Math.random());
-}
-}
-console.log(getRandom(1,50))
+
+
 //Create a function that uses the passed array of numbers and rounds all its elements to two decimals.
 //Print out the modified array in the console.
 //Use the first function for generating the input array.
