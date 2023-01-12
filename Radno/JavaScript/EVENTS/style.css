@@ -1,0 +1,20 @@
+body{
+    background-color: aquamarine;
+}
+.buttonOne{
+    display: flex;
+    justify-content: center;
+}
+.buttonTwo{
+    display: flex;
+    justify-content: center;
+}
+#button{
+background-color:red;
+}
+#button1{
+background-color: blueviolet;
+}
+.noToggle{
+    pointer-events: none;
+}
