@@ -1,8 +1,15 @@
-var button=document.getElementById('button');
-button.addEventListener('click',function onClick(event){
-document.body.style.backgroundColor='grey';
-})
-function turnToggleButtonOff(){
-    var element=document.getElementById('buttonTwo');
-    element.classList.remove('noToggle');
+var button = document.getElementById("button");
+
+function onClick(event) {
+  if (document.body.style.backgroundColor == "aquamarine") {
+    document.body.style.backgroundColor = "grey";
+  } else {
+    document.body.style.backgroundColor = "aquamarine";
+  }
+}
+button.addEventListener("click", onClick);
+function turnToggleButtonOff() {
+  //   var element = document.getElementById("buttonTwo");
+  //   element.classList.remove("noToggle");
+  button.removeEventListener('click', onClick);
 }

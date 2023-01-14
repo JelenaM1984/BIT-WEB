@@ -8,12 +8,20 @@ body{
 .buttonTwo{
     display: flex;
     justify-content: center;
+    padding: 20px;
+    
 }
 #button{
 background-color:red;
+border: 4px double #cccccc; 
+  border-radius: 10px; 
+  font-size: 28px; 
 }
 #button1{
 background-color: blueviolet;
+border: 4px double #cccccc;
+border-radius: 10px; 
+font-size: 28px; 
 }
 .noToggle{
     pointer-events: none;
