@@ -6,7 +6,7 @@ function fudbal(event) {
   image.style.marginLeft = y-30+'px';
 }
 function StopMove() {
-  ele.removeElementListener("click", fudbal);
+  ele.removeElementListener("click", onClick);
 }
 var ele = document.body;
-ele.addEventListener("click", fudbal);
+ele.addEventListener("click", onClick);
