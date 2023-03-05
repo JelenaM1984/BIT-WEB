@@ -1,9 +1,8 @@
-import { Character } from "./entitie.js";
+import { Character } from "../entities/entitie.js";
 
 const id = sessionStorage.getItem("caracterId");
 const url = `https://rickandmortyapi.com/api/character/${id}`;
 var repos = $(".repos");
-var result = [];
 
 fetch(url)
   .then((response) => {
@@ -29,10 +28,10 @@ fetch(url)
       `<div id="InfoDate">
         <h1 style="text-align:center"><span id="title" >Title:</span> ${character.name}</h1>
          <div class="row d-flex justify-content-center">
-         <div class="col-lg-4 col-md-6 col-sm-12 " style="margin-top:5rem">
+         <div class="col-lg-4 col-md-6 col-sm-12 " style="margin-top:5rem" >
              <img src="${imageSrc}" class="img-thumbnail" alt="no Image" id="noImage" style='width:20rem'>
          </div>
-         <div class="col-lg-4 col-md-6 col-sm-12 " style="margin-top:5rem">
+         <div class="col-lg-4 col-md-6 col-sm-12 " style="margin-top:5rem" id="background">
              <h3>Species</h3>
              <div id="species">${character.species}</div>
              <h3>Status</h3>

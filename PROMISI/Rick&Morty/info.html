@@ -18,8 +18,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script type="module" src="./info-details.js"></script>
-    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./view/info-details.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="bg-light">
     <div class="container" style="padding-top: 1rem">
@@ -27,8 +27,10 @@
         <div class="col-4 text-center"></div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-4 offset-4 text-center"><h4>Rick&Morty</h4></div>
+        <div class="row" id="headerInfo">
+          <div class="col-4 offset-4 text-center">
+            <h4>Rick&Morty</h4>
+          </div>
         </div>
       </div>
       <div class="row repos"></div>
