@@ -23,7 +23,7 @@ fetch("https://rickandmortyapi.com/api/character", {
                 <div class='card-body'>
                     <h5 class='card-title' style="font-size:1.5rem">${item.name}</h5>
 
-                    <a  onclick='goToDetail(${item.id})' class='btn btn-info' style="color:white;font-weight:bold;font-size:1rem">Like</a>
+                    <a  onclick='goToDetail(${item.id})' class='btn btn-info' style="color:white;font-weight:bold;font-size:1rem">Details</a>
                 </div>
             </div>
         </div>`
@@ -35,7 +35,9 @@ fetch("https://rickandmortyapi.com/api/character", {
         <img src="${item.image}" class="img-thumbnail" alt="image">
         <div class='card-body'>
             <h5 class='card-title' style="font-size:1.5rem">${item.name}</h5>
-            <a onclick='goToDetail(${item.id})' class='btn btn-info' style="color:white;font-weight:bold;font-size:1rem">Like</a>
+            <a href='./info.html'  onclick = 'getId(${item.id})' class = 'name'>More details</a>
+            <button type="button" class="btn btn-success">Like</button>
+            <a onclick='goToDetail(${item.id})">Details</a>
                 </div>
     </div>
 </div>`);
