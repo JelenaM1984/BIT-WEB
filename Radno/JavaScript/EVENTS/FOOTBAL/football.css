@@ -1,0 +1,19 @@
+body{
+background-image: url(./IMG_6769.jpg);
+background-repeat:  no-repeat;
+background-size: cover;
+
+}
+
+   .coverImage img{
+    height:100px;
+    width:100px;
+   }
+   .button{
+      background-color:red;
+      border: 4px double #cccccc; 
+      border-radius: 10px; 
+      font-size: 28px;
+      display: flex;
+      align-items: right;
+   }

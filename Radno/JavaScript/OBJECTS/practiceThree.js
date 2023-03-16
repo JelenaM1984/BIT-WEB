@@ -221,3 +221,21 @@ console.log(checkIfDigits('Apple'));
 console.log(checkIfDigits('GREAT5'));
 
 //Write a function that calculates a number of days to your birthday.
+//Input: 25 February
+function daysToBirthday(input = "2023-09-30") {
+    var birthday = new Date(input);
+    var todayDate = new Date()
+    var days = (birthday - todayDate) / 86400000;  // Razlika je u milisekundama
+    return ~~days;  // Vraca integer, brise decimale
+}
+console.log(daysToBirthday());
+//
+today=new Date();
+var bday=new Date(today.getFullYear(), 0, 25);
+if (today.getMonth()==0 && today.getDate()>25) 
+{
+bday.setFullYear(bday.getFullYear()+1); 
+}  
+var one_day=1000*60*60*24;
+console.log(Math.ceil((bday.getTime()-today.getTime())/(one_day))+
+" days left until birthday!");
